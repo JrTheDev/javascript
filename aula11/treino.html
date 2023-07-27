@@ -18,7 +18,13 @@
             var txtp = window.document.querySelector('input#txtps')
             var res = window.document.querySelector('div#res')
             var ps = txtp.value
-            res.innerHTML = `Se você nasceu no País ${ps} você é Estrangeiro` 
+            
+            if (ps == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Mongolao</strong></p>`
+            } else {
+                res.innerHTML = `Se você nasceu no País ${ps} você é Estrangeiro` 
+            }
+
         }
     </script>
 </body>
